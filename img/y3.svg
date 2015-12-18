@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="300px" viewBox="0 0 400 300" style="enable-background:new 0 0 400 300;" xml:space="preserve">
+<filter  id="AI_高斯模糊_7">
+	<feGaussianBlur  stdDeviation="7"></feGaussianBlur>
+</filter>
+<g id="XMLID_12_" style="filter:url(#AI_高斯模糊_7);">
+	<g>
+		<path style="fill:#FDF9EF;" d="M291.283,168.752c-16.357,2.456-31.513,1.063-36.313-5.293c-3.894-5.161-16.481-5.831-33.014-4.702
+			c-29.627-5.91-78.9-0.762-115.547,4.702c-14.101-4.978,16.532-62.595,57.668-67.126c10.69-1.169,22.1,1.248,33.609,9.102
+			c0,0,81.852-48.582,88.053-11.164c6.2,37.431,48.367,6.843,55.808,37.904C346.112,151.205,317.203,164.838,291.283,168.752z"/>
+		<path style="fill:#C7EADF;" d="M221.957,158.757c13.717,2.719,23.229,7.815,25.313,16.352c0,0-141.504,41.713-178.847,11.177
+			c-1.265-1.037-2.418-2.153-3.435-3.361c-3.051-3.625-5.047-7.355-6.102-11.164c0,0,20.265-4.242,47.523-8.301
+			C131.064,172.141,185.918,161.2,221.957,158.757z"/>
+		<path style="fill:#FDF9EF;" d="M106.41,163.459c36.647-5.464,85.92-10.612,115.547-4.702
+			C185.918,161.2,131.064,172.141,106.41,163.459z"/>
+	</g>
+</g>
+</svg>

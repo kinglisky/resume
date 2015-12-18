@@ -1,0 +1,415 @@
+@import "_icon.less";
+@import "_base.less";
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.countWidth(@width) {
+	width: @width;
+	left: (100%-@width)/2;
+}
+
+body {
+	@bgcolor: #fff;
+	font-family: Helvetica, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", "YouYuan", "幼圆", serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	background: @bgcolor;
+	position: absolute;
+	height: 500%;
+	top: 0;
+	.countWidth(100%);
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+strong {
+	font-weight: bold;
+	color: #000;
+}
+
+header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	background-color: #000;
+	z-index: 2000;
+	padding: 0;
+	nav {
+		display: block;
+		width: 100%;
+		height: 100%;
+		ul {
+			width: 90%;
+			height: 100%;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			font-family: Helvetica, sans-serif;
+			.clearfix;
+			@borColor: rgb(241, 232, 213);
+			li {
+				display: block;
+				float: left;
+				background-color: rgb(12, 11, 13);
+				a {
+					box-sizing: border-box;
+					display: block;
+					font-size: 15px;
+					font-weight: bold;
+					text-align: center;
+					cursor: pointer;
+					border-top: 3px solid rgb(12, 11, 13);
+					border-bottom: 3px solid rgb(12, 11, 13);
+					height: 90px;
+					line-height: 90px;
+					padding: 0 2em;
+					color: rgb(241, 232, 213);
+					text-decoration: none;
+					transition: all 0.5s;
+					i {
+						color: rgb(241, 232, 213);
+					}
+					&:hover,
+					&.active {
+						color: #ccc;
+						border-color: @borColor;
+						background-color: #222222;
+					}
+				}
+				&.contact {
+					float: right;
+					a {
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page {
+	z-index: 999;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	box-sizing: border-box;
+	background-color: #60DEED;
+	.view-box {
+		position: absolute;
+		.view-content {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			.pwra {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				img {
+					display: block;
+					position: absolute;
+				}
+			}
+		}
+	}
+	.content-box {
+//		display: none;
+		position: absolute;
+		box-sizing: border-box;
+		left: 5%;
+		color: rgb(2, 2, 2);
+		background-color: rgb(254, 252, 231);
+		padding: 3em 2em;
+		padding-top: 10%;
+		box-shadow: 0px 0px 10px 1px #f4f4f4;
+		h2 {
+			color: #000000;
+			text-align: left;
+			margin-bottom: 2%;
+		}
+		p {
+			color: #242323;
+			text-align: left;
+			font-size: 0.9em;
+			margin: 2em 0;
+		}
+	}
+}
+
+.page.nth1 {
+	top: 0;
+	left: 0;
+	.content-title {
+		padding: 2em;
+		position: absolute;
+		left: 5%;
+		h1 {
+			font-size: 1.5em;
+			color: rgb(0, 0, 0);
+			text-align: left;
+		}
+	}
+	.view-box {
+		width: 100%;
+		height: 100%;
+		.view-content {
+			.pwra:nth-child(1) img {
+				width: 30%;
+				top: 10%;
+				left: 10%;
+			}
+			.pwra:nth-child(2) img {
+				width: 90%;
+				top: -8%;
+				left: 10%;
+			}
+			.pwra:nth-child(3) img {
+				width: 90%;
+				bottom: -10%;
+				left: 0;
+			}
+		}
+	}
+}
+
+.page.nth2 {
+	top: 20%;
+	left: 0;
+	.content-box {
+		//		display: none;
+		width: 48%;
+		height: 100%;
+		.clearfix;
+		ul {
+			width: 40%;
+			display: block;
+			float: left;
+			font-size: 1.2em;
+			li {
+				padding: 0.5em 0;
+				color: #000000;
+				font-size: 0.8em;
+			}
+		}
+		.logo{
+			float: left;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 50%;
+			box-sizing: border-box;
+//			border: 0px solid #000;
+			box-shadow: 00px 00px 15px 0px #aaa99b;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.view-box {
+		width: 100%;
+		height: 100%;
+		.view-content {
+			.pwra:nth-child(1) img {
+				right: 5%;
+			}
+			.pwra:nth-child(2) img {
+				bottom: 17%;
+				right: 6%;
+			}
+			.pwra:nth-child(3) img {
+				width: 80%;
+				right: -20%;
+				bottom: 5%;
+			}
+			.pwra:nth-child(4) img {
+				width: 80%;
+				right: 0%;
+				bottom: -6%;
+				;
+			}
+		}
+	}
+}
+
+.page.nth3 {
+	top: 40%;
+	left: 0;
+	.view-box.nth1 {
+		width: 100%;
+		height: 100%;
+		.view-content {
+			.pwra:nth-child(1) img {
+				width: 20%;
+				top: 50%;
+				left: 30%;
+			}
+			.pwra:nth-child(2) img {
+				width: 60%;
+				top: 5%;
+				left: 10%;
+			}
+			.pwra:nth-child(3) img {
+				width: 20%;
+				bottom: 25%;
+				;
+				right: 5%;
+			}
+		}
+	}
+	.content-box {
+		width: 48%;
+		height: 100%;
+		canvas{
+			width: 300px;
+			height: 300px;
+			display: block;
+			margin: 0 auto;
+		}
+		h3 {
+			color: #000000;
+			text-align: left;
+			margin-bottom: 1%;
+			font-weight: bold;
+		}
+		p {
+			text-indent: 2em;
+			color: #242323;
+			text-align: left;
+			font-size: 0.8em;
+			margin: 1em 0;
+		}
+
+	}
+	.skills-tag {
+		position: absolute;
+		right: 5%;
+		width: 40%;
+		height: 80%;
+		bottom: 5%;
+		.tag{
+			box-sizing: border-box;
+			padding: 2%;
+			display: block;
+			position: absolute;
+			cursor: pointer;
+			transition: all 0.5s;
+			border-radius: 40px;
+			&.active,&:hover{
+				background-color: #55eafc;
+			}
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.tag:nth-child(1){
+			width: 38%;
+			left: 31%;
+			top: 30%;
+		}
+		.tag:nth-child(2){
+
+			width: 30%;
+			left:0%;
+		}
+		.tag:nth-child(3){
+			width: 30%;
+			right: 0;
+		}
+		.tag:nth-child(4){
+
+
+			width: 30%;
+			bottom: 0;
+		}
+		.tag:nth-child(5){
+			right: 0;
+			bottom: 0;
+			width: 30%;
+		}
+	}
+	.introduce{
+		display: none;
+	}
+}
+
+.page.nth4 {
+	top: 60%;
+	left: 0;
+	.content-box {
+		width: 48%;
+		height: 100%;
+		h2 {
+			text-align: left;
+		}
+		ul {
+			width: 100%;
+			li {
+				text-align: left;
+				width: 100%;
+				padding: 2% 0;
+				a {
+					text-decoration: none;
+					color: #1c1a1a;
+					padding-right: 1em;
+					transition: all 0.5s;
+					&:hover {
+						color: #7b3535;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page.nth5 {
+	top: 80%;
+	left: 0;
+	.view-box {
+		width: 100%;
+		height: 100%;
+		.view-content {
+			.pwra:nth-child(1) img {
+				width: 80%;
+				top: 10%;
+				right: 5%;
+			}
+			.pwra:nth-child(2) img {
+				width: 30%;
+				top: 20%;
+				left: 5%;
+			}
+			.pwra:nth-child(3) img {
+				width: 110%;
+				left: -5%;
+				bottom: -20%;
+			}
+		}
+	}
+	.content-box {
+		width: 48%;
+	}
+}
