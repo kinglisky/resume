@@ -242,12 +242,12 @@ header {
 			.pwra:nth-child(3) img {
 				width: 80%;
 				right: -20%;
-				bottom: 5%;
+				bottom: 0%;
 			}
 			.pwra:nth-child(4) img {
 				width: 80%;
 				right: 0%;
-				bottom: -6%;
+				bottom: -10%;
 				;
 			}
 		}
@@ -383,6 +383,26 @@ header {
 			}
 		}
 	}
+	.view-box{
+		width: 50%;
+		height: 100%;
+		right: 5%;
+		.view-content{
+			.pwra:nth-child(1) img{
+				right: 5%;
+				right: 20%;
+			}
+			.pwra:nth-child(2) img{
+				right: 5%;
+				bottom: 0;
+
+			}
+			.pwra:nth-child(3) img{
+				right: 5%;
+				top: 5%;
+			}
+		}
+	}
 }
 
 .page.nth5 {
@@ -411,5 +431,19 @@ header {
 	}
 	.content-box {
 		width: 48%;
+		ul{
+			li{
+				display: inline-block;
+				a{
+					text-decoration: none;
+					padding: 1em 0;
+					color: #454343;
+					transition: all 0.5s;
+					&:hover{
+						color: #ccc;
+					}
+				}
+			}
+		}
 	}
 }

@@ -373,12 +373,12 @@ header nav ul li.contact a {
 .page.nth2 .view-box .view-content .pwra:nth-child(3) img {
   width: 80%;
   right: -20%;
-  bottom: 5%;
+  bottom: 0%;
 }
 .page.nth2 .view-box .view-content .pwra:nth-child(4) img {
   width: 80%;
   right: 0%;
-  bottom: -6%;
+  bottom: -10%;
 }
 .page.nth3 {
   top: 40%;
@@ -505,6 +505,23 @@ header nav ul li.contact a {
 .page.nth4 .content-box ul li a:hover {
   color: #7b3535;
 }
+.page.nth4 .view-box {
+  width: 50%;
+  height: 100%;
+  right: 5%;
+}
+.page.nth4 .view-box .view-content .pwra:nth-child(1) img {
+  right: 5%;
+  right: 20%;
+}
+.page.nth4 .view-box .view-content .pwra:nth-child(2) img {
+  right: 5%;
+  bottom: 0;
+}
+.page.nth4 .view-box .view-content .pwra:nth-child(3) img {
+  right: 5%;
+  top: 5%;
+}
 .page.nth5 {
   top: 80%;
   left: 0;
@@ -530,4 +547,17 @@ header nav ul li.contact a {
 }
 .page.nth5 .content-box {
   width: 48%;
+}
+.page.nth5 .content-box ul li {
+  display: inline-block;
+}
+.page.nth5 .content-box ul li a {
+  text-decoration: none;
+  padding: 1em 0;
+  color: #454343;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+.page.nth5 .content-box ul li a:hover {
+  color: #ccc;
 }
